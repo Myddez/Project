@@ -1,0 +1,75 @@
+.feedback__wrapper
+    max-width: 825px
+    margin: 0 auto 100px
+
+.feedback__slider
+    position: relative
+    padding: 0 86px
+    & .slick-arrow
+        font-size: 0
+        position: absolute
+        width: 15px
+        height: 9px
+        border: none
+        outline: none
+        z-index: 1000
+        cursor: pointer
+    & .slick-prev
+        background: url('../img/prev.png') 0 0 no-repeat
+        left: 0
+        top: 35%
+    & .slick-next
+        background: url('../img/next.png') 0 0 no-repeat
+        right: 0
+        top: 35%
+    & .slick-dots
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 23px 0 0 0 
+        padding: 0
+        & li
+            list-style: none
+            margin: 0 3.5px
+            width: 8px
+            height: 8px
+            border: 1px solid #B3B3B3
+            border-radius: 50%
+            background: transparent
+            cursor: pointer
+            & button
+                font-size: 0px
+                display: none
+        & .slick-active
+            background: #B3B3B3
+
+.feedback__item
+    display: flex!important
+    flex-direction: column
+    align-items: center
+    text-align: center
+    & img
+        margin: 0 0 25px 0
+    & p
+        color: #444348
+        font-family: "Open Sans", sans-serif
+        font-size: 16px
+        line-height: 24.7px
+        margin: 0 0 0 0
+        &:nth-child(2)
+            font-weight: 600
+        &:nth-child(3)
+            margin: 0 0 20px 0
+        &:nth-child(4)
+            font-style: italic
+
+.slick-arrow
+    &:hover
+        opacity: 0.8
+    &:focus
+        opacity: 0.6
+
+@media (max-width: 500px)
+    .feedback__wrapper
+        display: none
+    
